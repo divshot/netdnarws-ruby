@@ -62,7 +62,7 @@ module NetDNARWS
       end
 
       request_options = {
-        :uri => _get_url(uri, options[:body] ? attributes[0] : {}),
+        :uri => _get_url(uri, options[:body] ? {} : attributes[0]),
         :method => method
       }
 
